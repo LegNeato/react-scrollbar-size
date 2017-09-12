@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import * as React from 'react';
 import PropTypes from 'prop-types';
 import EventListener from 'react-event-listener';
 import throttle from 'lodash/throttle';
@@ -12,7 +12,7 @@ const styles = {
 	msOverflowStyle: 'scrollbar',
 };
 
-class ScrollbarSize extends Component {
+class ScrollbarSize extends React.Component<any, any> {
 	static propTypes = {
 		onLoad: PropTypes.func,
 		onChange: PropTypes.func,
